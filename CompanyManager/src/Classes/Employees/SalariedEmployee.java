@@ -4,8 +4,8 @@ import java.util.Calendar;
 
 public class SalariedEmployee extends Employee {
 
-    public SalariedEmployee(String name, int age, double salary, Calendar admissionDate) {
-        super(name, age, salary, admissionDate);
+    public SalariedEmployee(String name, int age, double salary) {
+        super(name, age, salary);
     }
 
     @Override

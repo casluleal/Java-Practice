@@ -6,8 +6,8 @@ public class HourlyEmployee extends Employee {
 
     private int hoursWorked;
 
-    public HourlyEmployee(String name, int age, double salary, Calendar admissionDate) {
-        super(name, age, salary, admissionDate);
+    public HourlyEmployee(String name, int age, double salary) {
+        super(name, age, salary);
     }
 
     public void setHoursWorked(int hoursWorked) throws Exception {

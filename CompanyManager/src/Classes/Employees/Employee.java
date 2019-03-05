@@ -7,19 +7,24 @@ public abstract class Employee extends Person {
     private double salary;
     private Calendar admissionDate;
 
-    Employee(String name, int age, double salary, Calendar admissionDate) {
+    Employee(String name, int age, double salary) {
         super(name, age);
 
         this.salary = salary;
-        this.admissionDate = admissionDate;
+        this.admissionDate = Calendar.getInstance();
     }
 
-    double getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public boolean setSalary(double salary) {
+        if (this.salary >= salary) {
+            return false;
+        }
+
         this.salary = salary;
+        return true;
     }
 
     public Calendar getAdmissionDate() {

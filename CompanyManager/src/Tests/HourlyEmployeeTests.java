@@ -27,6 +27,6 @@ public class HourlyEmployeeTests extends TestCase {
     }
 
     private HourlyEmployee getHourlyEmployee() {
-        return new HourlyEmployee("John Doe", 25, 25.0, Calendar.getInstance());
+        return new HourlyEmployee("John Doe", 25, 25.0);
     }
 }

@@ -15,6 +15,6 @@ public class ManagerTests extends TestCase {
 
     @NotNull
     private Manager getManager() {
-        return new Manager("John Doe", 32, 7500.00, Calendar.getInstance());
+        return new Manager("John Doe", 32, 7500.00);
     }
 }

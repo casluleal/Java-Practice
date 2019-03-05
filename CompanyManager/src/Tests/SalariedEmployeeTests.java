@@ -15,6 +15,6 @@ public class SalariedEmployeeTests extends TestCase {
 
     @NotNull
     private SalariedEmployee getSalariedEmployee() {
-        return new SalariedEmployee("John Doe", 25, 3000.00, Calendar.getInstance());
+        return new SalariedEmployee("John Doe", 25, 3000.00);
     }
 }
