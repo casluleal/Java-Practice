@@ -7,14 +7,14 @@ public abstract class Employee extends Person {
     private double salary;
     private Calendar admissionDate;
 
-    public Employee(String name, int age, double salary, Calendar admissionDate) {
+    Employee(String name, int age, double salary, Calendar admissionDate) {
         super(name, age);
 
         this.salary = salary;
         this.admissionDate = admissionDate;
     }
 
-    public double getSalary() {
+    double getSalary() {
         return salary;
     }
 
@@ -23,7 +23,7 @@ public abstract class Employee extends Person {
     }
 
     public Calendar getAdmissionDate() {
-        return admissionDate;
+        return this.admissionDate;
     }
 
     public abstract String paySalary();

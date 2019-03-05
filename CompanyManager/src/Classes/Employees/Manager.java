@@ -1,4 +1,15 @@
 package Classes.Employees;
 
-public class Manager {
+import java.util.Calendar;
+
+public class Manager extends Employee {
+
+    public Manager(String name, int age, double salary, Calendar admissionDate) {
+        super(name, age, salary, admissionDate);
+    }
+
+    @Override
+    public String paySalary() {
+        return String.format("Your salary this month is $%.2f.", this.getSalary());
+    }
 }
